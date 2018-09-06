@@ -1,0 +1,11 @@
+version: "2"
+services:
+  web:
+    build: "./web/"
+    ports:
+      - "8000:80"
+    expose:
+      - "8000"
+    volumes:
+        - "./web/public:/var/www/html"
+        - "./web/000-default.conf:/etc/apache2/sites-available/000-default.conf"

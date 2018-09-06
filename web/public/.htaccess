@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^.hidden/(.*)$ - [R=404,L]
+</IfModule>
